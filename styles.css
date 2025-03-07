@@ -1,3 +1,10 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #000;
@@ -7,33 +14,91 @@ body {
     padding: 0;
 }
 
-h1, h2 {
-    font-weight: bold;
+/* header */
+header {
+    padding: 20px;
+    text-align: center;
 }
 
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+/* main content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* typography */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* links */
 a {
     color: white;
     text-decoration: none;
+    transition: opacity 0.2s;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
+/* buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid white;
     margin-top: 20px;
+    font-weight: bold;
 }
 
+.button:hover {
+    background: white;
+    color: black;
+}
+
+/* table (for schedule) */
 table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px solid white;
 }
 
+th {
+    font-weight: bold;
+}
+
+/* footer */
 footer {
     margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    margin: 0 15px;
 }
