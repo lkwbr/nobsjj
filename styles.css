@@ -132,7 +132,7 @@ th {
 #header, #footer {
     /* padding: var(--spacing-md); */
     text-align: center;
-    background: rgba(255,255,255,0.03);
+    /* /*background: rgba(255,255,255,0.03);*/ */
 }
 
 .subtext {
@@ -294,8 +294,8 @@ nav {
 .hero {
     padding: var(--spacing-xl) var(--spacing-md);
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-                url('res/hero-bg.jpg') center/cover;
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), */
+                /* url('res/hero-bg.jpg') center/cover; */
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -350,7 +350,7 @@ nav {
 .feature {
     text-align: center;
     padding: var(--spacing-md);
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
     border-radius: 8px;
     transition: transform 0.2s ease;
 }
@@ -423,7 +423,7 @@ nav {
 
 /* announcement styles */
 .announcement-card {
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
     padding: var(--spacing-lg);
     border-radius: 8px;
     margin: var(--spacing-lg) 0;
@@ -599,7 +599,7 @@ nav {
 .benefits {
     margin: var(--spacing-xl) 0;
     padding: var(--spacing-lg);
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
     border-radius: 4px;
 }
 
@@ -626,7 +626,7 @@ nav {
 .schedule-note {
     margin-top: var(--spacing-lg);
     padding: var(--spacing-md);
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
     border-radius: 4px;
     text-align: center;
 }
@@ -672,7 +672,7 @@ nav {
 }
 
 .highlight {
-    background: rgba(255,255,255,0.03);
+    /*background: rgba(255,255,255,0.03);*/
     padding: var(--spacing-md);
     border-radius: 4px;
     border-left: 3px solid var(--accent);
