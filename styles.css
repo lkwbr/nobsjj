@@ -146,26 +146,63 @@ th {
 }
 
 #footer {
-    margin-top: var(--spacing-xl);
-    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: var(--spacing-xl) var(--spacing-md);
+    /* border-top: 1px solid rgba(255,255,255,0.1); */
 }
 
-.footer-links {
+.footer-grid {
     display: flex;
-    gap: var(--spacing-md);
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: var(--spacing-md);
+    justify-content: space-around;
+    gap: var(--spacing-xl);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
 }
 
-.footer-links a {
-    border: none;
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: var(--accent);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.location-detail {
+    font-size: var(--font-sm);
     opacity: 0.7;
 }
 
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
 .copyright {
+    text-align: center;
     font-size: var(--font-sm);
-    opacity: 0.5;
+    opacity: 0.6;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
 }
 
 /* animations */
@@ -359,7 +396,7 @@ nav {
 .coming-soon {
     opacity: 0.6;
     cursor: not-allowed;
-    padding: var(--spacing-sm);
+    padding: var(--spacing-xl);
     font-size: var(--font-sm);
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -384,11 +421,6 @@ nav {
     }
 }
 
-.location-detail {
-    font-size: var(--font-sm);
-    opacity: 0.8;
-}
-
 /* announcement styles */
 .announcement-card {
     background: rgba(255,255,255,0.03);
@@ -404,8 +436,7 @@ nav {
 }
 
 footer {
-    padding: var(--spacing-lg) var(--spacing-md);
-    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -589,4 +620,95 @@ nav {
 .schedule-note p {
     margin: 0;
     color: var(--accent);
+}
+
+/* philosophy section */
+.philosophy {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.beliefs, .commitments, .values {
+    margin: var(--spacing-lg) 0;
+}
+
+.philosophy h3 {
+    color: var(--accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.philosophy ul {
+    list-style: none;
+    padding: 0;
+}
+
+.philosophy li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.philosophy li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.highlight {
+    background: rgba(255,255,255,0.03);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+    margin-top: var(--spacing-md);
+}
+
+/* update creed styling */
+.creed {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.creed p {
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.coach-social {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    /* border-top: 1px solid rgba(255,255,255,0.1); */
+}
+
+.coach-social p {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-sm);
+    opacity: 0.8;
+}
+
+.coach-social .social-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.coach-social .social-links a {
+    color: var(--accent);
+}
+
+.coach-photo {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* border: 2px solid rgba(255,255,255,0.1); */
+}
+
+@media (max-width: 600px) {
+    .coach-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
