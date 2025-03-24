@@ -726,3 +726,22 @@ nav {
         height: 150px;
     }
 }
+
+.calendar-embed {
+    margin: var(--spacing-lg) 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.calendar-embed iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .calendar-embed iframe {
+        height: 400px;
+    }
+}
