@@ -347,6 +347,10 @@ nav {
     padding: var(--spacing-xl) 0;
 }
 
+.schedule-title {
+    font-weight: bold;
+}
+
 .feature {
     text-align: center;
     padding: var(--spacing-md);
